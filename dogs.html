@@ -1,0 +1,45 @@
+
+<html>
+<head>
+  <title>Dogs</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Annyang Voice Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+    <!-- Simple Slider Library (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.5/dist/simpleslider.min.js"></script>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Doggos!🐶</h1>
+
+    <div id="carousel" class="carousel"></div>
+
+    <h2>Dog Breeds</h2>
+    <div id="breeds"></div>
+
+    <div id="breed-info" style="display: none;"></div>
+  </main>
+
+  <div id="audio-box">
+    <h3>Audio Commands</h3>
+    <ul>
+      <li>"Load Dog Breed Labrador"</li>
+    </ul>
+    <button onclick="annyang.pause()">Turn Off Audio</button>
+    <button onclick="annyang.resume()">Turn On Audio</button>
+  </div>
+
+  
+  <script src="annyang-setup.js"></script>
+  <script src="dogs.js"></script>
+</body>
+</html>
